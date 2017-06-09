@@ -1,5 +1,5 @@
 #=============================================================================================
-#             Automated Testing Script written in selenium & Python3 By Ryan Kavanaugh
+#             Automated Testing Script written in Selenium & Python3 By Ryan Kavanaugh
 #          This script is to test the facebook account creation feature
 #=============================================================================================
 
