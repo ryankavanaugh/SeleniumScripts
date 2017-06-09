@@ -50,6 +50,6 @@ month.select_by_visible_text('Sep')
 day.select_by_visible_text('27')
 year.select_by_value('1991')
 
-#Create Account Button
+#Click "Create Account" button
 
 driver.find_element_by_id('u_0_l').click()
