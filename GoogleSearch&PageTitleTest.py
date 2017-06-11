@@ -28,7 +28,6 @@ inputElement.send_keys("Geckos for sale!")
 inputElement.submit()
 
 try:
-
     # We now wait for the page to refresh and the title to display our search
     WebDriverWait(driver, 10).until(EC.title_contains("Geckos for sale!"))
 
@@ -39,5 +38,5 @@ try:
        print('The title matches our search and has passed our test.' + '\n')
 
 finally:
-
     driver.quit()
+    
