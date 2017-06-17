@@ -34,7 +34,6 @@ for current_row in range(worksheet.nrows):
         wb_sheet.write(current_row, 1, 'Z.F.I.')
         print(content)
         pass
-    #time.sleep(1)
 
 print('\n')
 
