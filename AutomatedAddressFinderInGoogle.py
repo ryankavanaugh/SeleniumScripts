@@ -19,9 +19,7 @@ from selenium.webdriver.support import expected_conditions as EC
 workbook = xlrd.open_workbook('JSList01.xlsx')
 worksheet = workbook.sheet_by_name('Sheet1')
 
-
 print('\n')
-
 
 for current_row in range(worksheet.nrows):
 
@@ -47,4 +45,5 @@ for current_row in range(worksheet.nrows):
         pass
 
     print('\n')
+    
     driver.quit()
