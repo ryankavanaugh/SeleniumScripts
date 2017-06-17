@@ -1,3 +1,9 @@
+#=============================================================================================
+#             Automated Testing Script written in Selenium & Python3 By Ryan Kavanaugh
+#          This script connects to an Excel spreadsheet and uses a for loop is to web scrape
+#           for company addresses
+#=============================================================================================
+
 import xlrd
 import xlwt
 import requests
