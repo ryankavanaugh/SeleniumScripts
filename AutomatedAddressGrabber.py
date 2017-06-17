@@ -9,28 +9,21 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 # EXCEL WORKBOOK
-    # open up the workbook
 workbook = xlrd.open_workbook('JSList01.xlsx')
-    # open up the worksheet
 worksheet = workbook.sheet_by_name('Sheet1')
 
-#workbook2 = xlwt
 
 print('\n')
 
-#=================================================
-# THE LOOP
+
 for current_row in range(worksheet.nrows):
-    # ================================================
+
     # CHROME DRIVER
     driver = webdriver.Chrome()
     driver.get('http://www.google.com')
-    # element for the google search box
     inputElement = driver.find_element_by_name("q")
 
-    # =================================================
 
     fname_text = worksheet.row(current_row)[0]
 
@@ -47,19 +40,5 @@ for current_row in range(worksheet.nrows):
         print("Retrieve Address Manually")
         pass
 
-  #  worksheet.write(current_row, 1, element.text)
     print('\n')
-    #driver.get('http://www.google.com')
-    #THIS PART NEEDS TO OPEN THE BROWSER AND GRAB THE ADDRESS OF EACH PLACE
-
-    #1 ACCESS THE BROWSER
-
-    #2 TYPE
-
-
-    #lname_text = worksheet.row(current_row)[1]
-    #age = worksheet.row(current_row)[2]
-    #print(fname_text, lname_text, age)
-
-
     driver.quit()
